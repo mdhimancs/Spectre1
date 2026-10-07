@@ -1,0 +1,6 @@
+{
+  "name": "SPECTRE Watch - Advanced Intelligence & Recon Platform",
+  "description": "Full-spectrum OSINT search engine and threat intelligence platform featuring Google Dorking, domain & DNS inspection, Shodan CVE scanning, EXIF forensics, and interactive link graphs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
