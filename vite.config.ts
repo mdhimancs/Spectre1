@@ -6,11 +6,11 @@ import { defineConfig } from 'vite';
 export default defineConfig(() => {
   return {
     // Relative base path ensures asset paths resolve correctly on GitHub Pages subpaths
-    base: './',
+    base: process.env.BASE_PATH ? `${process.env.BASE_PATH.replace(/\/$/, '')}/` : './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve('.'),
       },
     },
     server: {

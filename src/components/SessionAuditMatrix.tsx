@@ -638,8 +638,8 @@ export const SessionAuditMatrix: React.FC<SessionAuditMatrixProps> = ({ onAddToG
               ) : (
                 filteredItems.map((item) => (
                   <tr key={item.key} className="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 font-mono">
-                    {/* Attribute Name */}
-                    <td className="py-3.5 px-4 whitespace-nowrap font-bold text-slate-900 dark:text-slate-100">
+                    {/* Attribute Name - Dark Grey Font */}
+                    <td className="py-3.5 px-4 whitespace-nowrap font-bold text-slate-700 dark:text-slate-300">
                       {item.label}
                     </td>
 

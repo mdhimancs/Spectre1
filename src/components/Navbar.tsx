@@ -106,10 +106,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Shield className="w-4 h-4" />
             </div>
             <div>
-              <span className={`text-lg font-extrabold font-mono uppercase tracking-wider ${
+              <span className={`text-xl font-bold font-black font-mono uppercase tracking-wider ${
                 isDark ? 'text-white' : 'text-slate-900'
               }`}>
-                SPECTRE <span className={`font-extrabold ${isDark ? 'text-cyan-400' : 'text-cyan-700'}`}>WATCH</span>
+                SPECTRE <span className={`font-bold font-black ${isDark ? 'text-cyan-400' : 'text-cyan-700'}`}>WATCH</span>
               </span>
               <span className="hidden sm:inline-block ml-2 px-1.5 py-0.2 text-[9px] font-mono font-bold rounded uppercase tracking-wider bg-cyan-500/10 text-cyan-500 border border-cyan-500/20">
                 v3.2 Real-time

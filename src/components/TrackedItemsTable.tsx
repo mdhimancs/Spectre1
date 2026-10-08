@@ -550,14 +550,14 @@ export const TrackedItemsTable: React.FC<TrackedItemsTableProps> = ({
                       </span>
                     </td>
 
-                    {/* Target Item Name & Type */}
+                    {/* Target Item Name & Type - Dark Grey Font */}
                     <td className="py-2 px-3 font-mono">
                       <div className="flex items-center gap-1.5">
                         <span className="p-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
                           {getTypeIcon(item.type)}
                         </span>
                         <div>
-                          <div className="font-bold flex items-center gap-1 text-slate-900 dark:text-slate-100">
+                          <div className="font-bold flex items-center gap-1 text-slate-700 dark:text-slate-300">
                             <span>{item.target}</span>
                             <button
                               onClick={() => handleCopy(item.target, item.id)}
@@ -616,7 +616,7 @@ export const TrackedItemsTable: React.FC<TrackedItemsTableProps> = ({
                       </div>
                     </td>
 
-                    {/* Notes & Quick Edit */}
+                    {/* Notes & Quick Edit - Dark Grey Font */}
                     <td className="py-2 px-3 max-w-[220px]">
                       {editingId === item.id ? (
                         <div className="flex items-center gap-1">
@@ -624,7 +624,7 @@ export const TrackedItemsTable: React.FC<TrackedItemsTableProps> = ({
                             type="text"
                             value={editingNotes}
                             onChange={(e) => setEditingNotes(e.target.value)}
-                            className="w-full px-1.5 py-0.5 rounded text-[11px] border bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 border-cyan-500 outline-none"
+                            className="w-full px-1.5 py-0.5 rounded text-[11px] border bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 border-cyan-500 outline-none"
                           />
                           <button
                             onClick={() => handleSaveNotes(item.id)}
@@ -636,7 +636,7 @@ export const TrackedItemsTable: React.FC<TrackedItemsTableProps> = ({
                         </div>
                       ) : (
                         <div className="group relative flex items-start justify-between gap-1">
-                          <p className="text-[10px] text-slate-600 dark:text-slate-300 line-clamp-1">
+                          <p className="text-[10px] text-slate-700 dark:text-slate-300 font-medium line-clamp-1">
                             {item.notes}
                           </p>
                           <button
